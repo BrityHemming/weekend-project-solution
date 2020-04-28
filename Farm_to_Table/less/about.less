@@ -1,0 +1,68 @@
+#about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    .text{
+        width:60%;
+        padding:3%;
+        border:3px solid #444;
+        background-color:#fff;
+
+        p{
+            text-align:justify;
+        }// this closes p
+    }// this closes text
+}// this closes about
+
+.gallery{
+    .container{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+
+        div{
+            width:40%;
+            height:40vh;
+            margin:2% 0;
+            display:flex;
+            align-items:flex-end;
+
+            .hide{
+                background-color:#fff;
+                height:10vh;
+                display:none;
+                
+                h2{
+                    margin:4%;
+                }
+            }// this closes hide
+            &:hover{
+                .hide{
+                    display:block;
+                }
+            }
+        }// this closes div
+        .farm{
+            background-image:url('../images/barn.jpg');
+            background-size:cover;
+            background-position:center;
+        }// this closes farm
+        .cook{
+            background-image:url('../images/cook.jpg');
+            background-size:cover;
+            background-position:center;
+        }
+        .produce{
+            background-image:url('../images/produce.jpg');
+            background-size:cover;
+            background-position:center;
+        }
+        .animals{
+            background-image:url('../images/sheep.jpg');
+            background-size:cover;
+            background-position:center;
+        }
+    }// this closes container
+}// this closes gallery

@@ -1,0 +1,48 @@
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:1%;
+    position:fixed;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.8);
+    top:0;
+    
+    .logo{
+        width:10%;
+        
+        a{
+            color:#444;
+        }
+    }// this closes logo
+    .links{
+        width:60%;
+        display:flex;
+        justify-content: space-evenly;
+
+        a{
+            letter-spacing:3px;
+            color:#444;
+
+            &:hover{
+                color:@accent;
+            }// this closes hover
+        }// this closes the anchor tag
+    }// this closes links
+}// this closes the nav
+
+
+header{
+    margin-top:5.5%;
+    height:90vh;
+    background-image:url('../images/header.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.titles{
+    width:40%;
+    text-align:center;
+}
